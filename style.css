@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* PENGATURAN DASAR */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  }
+
+body {
+font-family: 'Poppins', sans-serif;
+background: #fff9fc;
+color: #66536b;
+line-height: 1.7;
+}
+
+a {
+text-decoration: none;
+}
+
+/* NAVIGASI */
+header {
+background: rgba(255, 255, 255, 0.97);
+box-shadow: 0 3px 15px rgba(190, 135, 180, 0.12);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+
+.navbar {
+max-width: 1200px;
+margin: auto;
+padding: 18px 30px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+}
+
+.logo {
+font-size: 28px;
+font-weight: 700;
+color: #c77da9;
+}
+
+.logo span {
+color: #b8a4e8;
+}
+
+.nav-links {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 17px;
+list-style: none;
+}
+
+.nav-links a {
+font-size: 13px;
+color: #66536b;
+transition: 0.3s;
+}
+
+.nav-links a:hover {
+color: #d783b4;
+}
+
+/* BAGIAN HOME */
+.home {
+min-height: 85vh;
+padding: 70px 8%;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 70px;
+background: linear-gradient(
+135deg,
+#ffe7f2,
+#f1eaff,
+#e9fff7
+);
+}
+
+.home-text {
+max-width: 600px;
+}
+
+.sapaan {
+color: #bd75a2;
+font-weight: 600;
+margin-bottom: 12px;
+}
+
+.home-text h1 {
+font-size: clamp(32px, 5vw, 48px);
+line-height: 1.3;
+margin-bottom: 12px;
+color: #66536b;
+}
+
+.home-text h1 span {
+color: #d783b4;
+}
+
+.home-text h2 {
+font-size: 19px;
+font-weight: 500;
+margin-bottom: 18px;
+}
+
+.deskripsi {
+margin-bottom: 25px;
+}
+
+.tombol {
+display: inline-block;
+padding: 12px 27px;
+border-radius: 30px;
+background: #d98fba;
+color: white;
+font-weight: 500;
+box-shadow: 0 5px 15px rgba(217, 143, 186, 0.25);
+transition: 0.3s;
+}
+
+.tombol:hover {
+background: #bd75a2;
+transform: translateY(-3px);
+}
+
+/* FOTO PROFIL */
+.foto-profil {
+width: 280px;
+height: 280px;
+flex-shrink: 0;
+position: relative;
+}
+
+.foto-profil img {
+width: 100%;
+height: 100%;
+display: block;
+object-fit: cover;
+object-position: center;
+border-radius: 50%;
+border: 8px solid white;
+box-shadow: 0 8px 25px rgba(180, 130, 180, 0.25);
+background: #f5e6f2;
+}
+
+.hiasan {
+position: absolute;
+right: -10px;
+bottom: 15px;
+width: 55px;
+height: 55px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: white;
+border-radius: 50%;
+font-size: 27px;
+box-shadow: 0 5px 15px rgba(180, 130, 180, 0.15);
+}
+
+/* SEMUA SECTION */
+.section {
+max-width: 1200px;
+margin: auto;
+padding: 75px 30px;
+scroll-margin-top: 85px;
+}
+
+.section-pink {
+max-width: none;
+background: #fff0f7;
+padding-left: max(30px, calc((100% - 1140px) / 2));
+padding-right: max(30px, calc((100% - 1140px) / 2));
+}
+
+.section-lavender {
+max-width: none;
+background: #f4efff;
+padding-left: max(30px, calc((100% - 1140px) / 2));
+padding-right: max(30px, calc((100% - 1140px) / 2));
+}
+
+.section-title {
+text-align: center;
+font-size: 30px;
+margin-bottom: 40px;
+color: #66536b;
+}
+
+.section-title span {
+color: #d783b4;
+}
+
+/* TENTANG SAYA */
+.about-card {
+max-width: 850px;
+margin: auto;
+padding: 35px;
+border-radius: 22px;
+background: white;
+text-align: center;
+box-shadow: 0 5px 20px rgba(180, 130, 180, 0.10);
+}
+
+.about-icon {
+font-size: 35px;
+margin-bottom: 15px;
+}
+
+/* KARTU PENDIDIKAN, KEAHLIAN, PENGALAMAN */
+.card-container {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 25px;
+}
+
+.card {
+padding: 28px 22px;
+background: white;
+border-radius: 20px;
+text-align: center;
+border: 1px solid #f8e3f0;
+border-bottom: 4px solid #edc2dc;
+box-shadow: 0 5px 20px rgba(180, 130, 180, 0.09);
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+transform: translateY(-6px);
+box-shadow: 0 10px 25px rgba(180, 130, 180, 0.16);
+}
+
+.card-icon {
+font-size: 38px;
+margin-bottom: 12px;
+}
+
+.card h3 {
+font-size: 17px;
+line-height: 1.5;
+color: #bd75a2;
+margin-bottom: 10px;
+}
+
+.card p {
+font-size: 14px;
+overflow-wrap: anywhere;
+}
+
+.card .tahun {
+font-weight: 600;
+color: #a18acb;
+margin-bottom: 5px;
+}
+
+/* KONTAK */
+.contact-card {
+max-width: 750px;
+margin: auto;
+padding: 30px;
+background: white;
+border-radius: 22px;
+text-align: center;
+box-shadow: 0 5px 20px rgba(180, 130, 180, 0.10);
+}
+
+.contact-card p {
+margin: 12px 0;
+overflow-wrap: anywhere;
+}
+
+.contact-card a {
+color: #bd75a2;
+overflow-wrap: anywhere;
+}
+
+.contact-card a:hover {
+color: #9276c6;
+text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+padding: 25px 15px;
+background: #f5ddeb;
+color: #76556d;
+text-align: center;
+font-size: 13px;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+.navbar {
+flex-direction: column;
+}
+
+.nav-links {
+    gap: 12px;
+}
+
+.home {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 35px;
+    padding: 55px 7%;
+}
+
+.foto-profil {
+    width: 230px;
+    height: 230px;
+}
+
+.card-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+}
+
+/* HP */
+@media (max-width: 550px) {
+.navbar {
+padding: 15px;
+}
+
+.nav-links {
+    gap: 8px 13px;
+}
+
+.nav-links a {
+    font-size: 12px;
+}
+
+.home {
+    padding: 45px 22px;
+}
+
+.home-text h2 {
+    font-size: 17px;
+}
+
+.foto-profil {
+    width: 200px;
+    height: 200px;
+}
+
+.section {
+    padding: 55px 20px;
+}
+
+.section-title {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    grid-template-columns: 1fr;
+}
+
+.card {
+    padding: 25px 18px;
+}
+
+.about-card,
+.contact-card {
+    padding: 25px 18px;
+}
+
+}
